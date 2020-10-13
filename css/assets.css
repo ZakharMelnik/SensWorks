@@ -31,6 +31,11 @@ body {
  src: url(fonts/BebasNeue-Bold.ttf);
 }
 
+@font-face {
+ font-family: Lato;
+ src: url(fonts/Lato-Regular.ttf);
+}
+
 h1 {
 	font-family: Bebas Neue;
 	font-style: normal;

@@ -18,6 +18,7 @@ $(document).ready(function() {
 		return false;
 	});
 
+
 	$(".header .btn-menu").click(function(){
 		$(".header-menu").css("display", "block");
 	});
