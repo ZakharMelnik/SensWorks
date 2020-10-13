@@ -1,0 +1,43 @@
+* {
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	color: #000;
+}
+ul {
+	padding: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+body {
+	background: linear-gradient(116.59deg, #102441 -3.58%, #000000 88.26%);
+	font-family: Lato, sans-serif;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+@font-face {
+ font-family: Bebas Neue;
+ src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+ font-family: Bebas Neue Bold;
+ src: url(fonts/BebasNeue-Bold.ttf);
+}
+
+h1 {
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 58px;
+	line-height: 100%;
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 20px;
+}
