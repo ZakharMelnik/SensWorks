@@ -1,4 +1,4 @@
-header .header {
+header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -8,7 +8,7 @@ header .header {
 	position: relative;
 }
 
-header ul.nav-menu {
+header .nav-menu {
 	display: flex;
 }
 
@@ -87,7 +87,7 @@ header .btn-menu {
 	display: none;
 }
 
-.catalog header .header {
+.catalog header {
 	margin-bottom: 130px;
 }
 
@@ -585,12 +585,8 @@ input[type="checkbox"]:checked+label::before {
 	display: none;
 }
 
-.full-height header .header {
+.full-height header {
 	margin-bottom: 40px;
-}
-
-body.full-height {
-	padding-bottom: 20px;
 }
 
 
@@ -613,6 +609,7 @@ body.full-height {
 	line-height: 120%;
 	color: #FFFFFF;
 	padding: 20px 0;
+	height: initial;
 }
 
 .c span {
@@ -623,30 +620,30 @@ body.full-height {
 	font-size: 16px;
 	line-height: 120%;
 	color: #FFFFFF;
-	padding: 20px 0;
-	height: 60px;
+	padding: 5px 0;
+	height: 57px;
+	box-sizing: content-box;
+	text-align: left;
 }
 
 
 .r {
 	display: flex;
-	-margin-bottom: 100px;
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 20px 0;
 
 }
 
 .c {
 	flex: 1;
-	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	-border-left: 1px solid rgba(255, 255, 255, 0.1);
 	padding-left: 15px;
 }
 
 .c-title {
 	display: flex;
 	align-items: center;
-	margin-left: 50px;
-	border-left: 0;
-
+	padding-left: 50px;
 }
 
 .c-title span {
@@ -662,4 +659,52 @@ body.full-height {
 	font-size: 20px;
 	line-height: 120%;
 	color: #94A3BE;
+	height: initial;
+}
+
+.c2 {
+	flex: 2;
+	padding-right: 15px;
+}
+
+body:before {
+	content: '';
+	width: 1px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.1);
+	z-index: -1;
+}
+
+body > .container:first-child:before {
+	content: '';
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	z-index: -1;
+}
+
+body > .container:first-child {
+	position: relative;
+	min-height: 100vh;
+}
+
+body > .container:first-child:after {
+	content: '';
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.1);
+	z-index: -1;
+	right: 15px;
 }

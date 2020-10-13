@@ -19,7 +19,7 @@ $(document).ready(function() {
 	});
 
 
-	$(".header .btn-menu").click(function(){
+	$("header .btn-menu").click(function(){
 		$(".header-menu").css("display", "block");
 	});
 
