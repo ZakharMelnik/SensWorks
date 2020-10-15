@@ -90,10 +90,10 @@ $(document).ready(function() {
 	  arrows: false
 	});
 
-	$( ".slick-slide" ).each(function( index ) { 
+	$( ".slick-slide" ).each(function( index ) {
 	   $( this ).css('margin-top',
 	   ($('.slider').height()-$(this).height())/2+'px' );
-	 });
+	});
 
 
 

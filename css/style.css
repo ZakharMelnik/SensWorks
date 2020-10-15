@@ -585,16 +585,15 @@ input[type="checkbox"]:checked+label::before {
 	max-width: 100%;
 	max-height: 400px;
 }
+
 .slide-img.poa {
-	
+	margin-top: 80px!important;
 }
 
 .slide-img.poa img {
-	position: relative;
-	bottom: 0;
-	right: 0;
-	max-width: inherit;
+	-max-width: inherit;
 	max-height: inherit;
+	box-shadow: 0px 28px 70px rgba(30, 100, 202, 0.26);
 }
 
 .slick-list {
@@ -728,3 +727,6 @@ body > .container:first-child:after {
 	z-index: -1;
 	right: 15px;
 }
+
+
+
