@@ -162,7 +162,7 @@ body.full-height:after {
 }
 
 .slide-img.poa {
-	padding: 0;
+	padding: 10px 0 0;
 }
 
 .slide-img.poa img {
@@ -180,6 +180,20 @@ body.full-height:after {
 
 .slider ul li {
 	margin-bottom: 30px;
+}
+
+.slick-slide .slide-img img {
+		max-height: 100%;
+}
+
+.poa1 img {
+	position: relative!important;
+	left: -13px;
+}
+
+.poa2 img {
+	position: relative!important;
+	left: 8px;
 }
 
 }
@@ -315,7 +329,6 @@ body.full-height:after {
 	.main .product {
 	    margin-bottom: 100px;
 	}
-
 }
 
 @media (max-width: 480px) {

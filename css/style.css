@@ -261,8 +261,6 @@ body.full-height:after {
 	font-weight: normal;
 	font-size: 52px;
 	line-height: 160%;
-	display: flex;
-	align-items: center;
 	letter-spacing: 0.07em;
 	color: #fff;
 	margin-bottom: 30px;
@@ -432,6 +430,7 @@ input[type="checkbox"]:checked+label::before {
 	position: absolute;
 	right: 0;
 	bottom: -200px;
+	transition: .2s ease-out;
 }
 
 .popup-youtube span {
@@ -441,9 +440,21 @@ input[type="checkbox"]:checked+label::before {
 	margin: 0 22px;
 }
 
+.popup-youtube svg path {
+	transition: .2s ease-out;
+}
+
 .popup-youtube:hover {
 	text-decoration: none;
-	color: #fff;
+	color: #F32B2B;
+}
+
+.popup-youtube:hover span {
+	background-color: #f32b2b;
+}
+
+.popup-youtube:hover svg path {
+	fill: #f32b2b;
 }
 
 
@@ -560,6 +571,15 @@ input[type="checkbox"]:checked+label::before {
 .arrows > div:first-child {
 	margin-right: 60px;
 }
+
+.arrows path {
+	transition: .2s ease-out;
+}
+
+.arrows > div:hover path {
+	fill: #F32B2B;
+}
+
 .slick-slide .slide-img img {
 	margin: 0 auto;
 	max-width: 100%;
